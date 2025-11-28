@@ -51,6 +51,7 @@ def show_stars_row(num_colored, num_uncolored):
     # Build a visual group of stars using emojis about 10 per row
     total = num_colored + num_uncolored
     stars = []
+    # Mix colored and uncolored so children can count visually — but keep simple patterns
     # We'll place colored then uncolored so it's easy to count the colored ones quickly
     stars.extend(["🌟"] * num_colored)
     stars.extend(["⭐"] * num_uncolored)
